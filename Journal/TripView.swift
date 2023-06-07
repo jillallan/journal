@@ -62,8 +62,6 @@ struct TripView: View {
 }
 
 #Preview {
-
-    
-    TripView(trip: Trip(title: "Greece", endDate: Date.now, startDate: Date.now))
+    TripView(trip: Trip(title: "Greece", startDate: Date.now, endDate: Date.now))
         .modelContainer(for: Step.self, inMemory: true)
 }
