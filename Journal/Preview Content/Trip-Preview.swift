@@ -28,9 +28,9 @@ extension Trip {
                 endDate: dateFormatter.date(from: "31/03/16 12:00:00") ?? Date.now
             ),
             Trip(
-                title: "Athens and the Cyclades",
-                startDate: dateFormatter.date(from: "12/05/2023 13:00:00") ?? Date.now,
-                endDate: dateFormatter.date(from: "28/05/2023 19:00:00") ?? Date.now
+                title: "Russia",
+                startDate: dateFormatter.date(from: "31/07/2016 13:00:00") ?? Date.now,
+                endDate: dateFormatter.date(from: "16/08/2023 19:00:00") ?? Date.now
             )
         ]
         return trips

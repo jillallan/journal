@@ -20,6 +20,7 @@ class Step {
     
     var date: Date
     var locationCoordinate: CLLocationCoordinate2D
+    var trip: Trip
     
     /// Create a new step
     ///

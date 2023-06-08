@@ -12,7 +12,6 @@ import SwiftData
 class Trip {
     var title: String
     var endDate: Date
-    var startDate: Date
  
     var steps: [Step]? = []
     

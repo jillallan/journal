@@ -19,7 +19,14 @@ let previewContainer: ModelContainer = {
         
         for trip in Trip.previewTrips {
             container.mainContext.insert(object: trip)
+            
+            for step in Step.previewSteps {
+                container.mainContext.insert(object: step)
+                step.trip = trip
+            }
         }
+        
+        
         
         return container
         
