@@ -18,7 +18,7 @@
 		786C72D52A2FBEBA005BBD7D /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72D42A2FBEBA005BBD7D /* Trip.swift */; };
 		786C72D72A2FBF61005BBD7D /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72D62A2FBF61005BBD7D /* Step.swift */; };
 		78BD469F2A2FD68300777E9B /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD469E2A2FD68300777E9B /* TripView.swift */; };
-		78BD46A12A30A25000777E9B /* ModelContextPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD46A02A30A25000777E9B /* ModelContextPreview.swift */; };
+		78BD46A12A30A25000777E9B /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD46A02A30A25000777E9B /* PreviewSampleData.swift */; };
 		78BD46A32A30A57F00777E9B /* Trip-Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD46A22A30A57F00777E9B /* Trip-Preview.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +56,7 @@
 		786C72D42A2FBEBA005BBD7D /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		786C72D62A2FBF61005BBD7D /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		78BD469E2A2FD68300777E9B /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
-		78BD46A02A30A25000777E9B /* ModelContextPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelContextPreview.swift; sourceTree = "<group>"; };
+		78BD46A02A30A25000777E9B /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
 		78BD46A22A30A57F00777E9B /* Trip-Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip-Preview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				786C72AE2A2FBDC5005BBD7D /* Preview Assets.xcassets */,
-				78BD46A02A30A25000777E9B /* ModelContextPreview.swift */,
+				78BD46A02A30A25000777E9B /* PreviewSampleData.swift */,
 				78BD46A22A30A57F00777E9B /* Trip-Preview.swift */,
 			);
 			path = "Preview Content";
@@ -282,7 +282,7 @@
 				786C72D52A2FBEBA005BBD7D /* Trip.swift in Sources */,
 				786C72A52A2FBDC4005BBD7D /* JournalApp.swift in Sources */,
 				786C72A92A2FBDC4005BBD7D /* ContentView.swift in Sources */,
-				78BD46A12A30A25000777E9B /* ModelContextPreview.swift in Sources */,
+				78BD46A12A30A25000777E9B /* PreviewSampleData.swift in Sources */,
 				786C72D32A2FBE59005BBD7D /* PersistanceController.swift in Sources */,
 				78BD46A32A30A57F00777E9B /* Trip-Preview.swift in Sources */,
 				786C72D72A2FBF61005BBD7D /* Step.swift in Sources */,

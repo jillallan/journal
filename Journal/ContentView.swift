@@ -66,8 +66,9 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(ModelContextPreview.preview.modelContainer)
-//        .modelContainer(for: [Trip.self, Step.self], inMemory: true)
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .modelContainer(previewContainer)
+    }
 }

@@ -61,7 +61,14 @@ struct TripView: View {
     }
 }
 
-#Preview {
-    TripView(trip: Trip(title: "Greece", startDate: Date.now, endDate: Date.now))
-        .modelContainer(for: Step.self, inMemory: true)
+struct TripView_Previews: PreviewProvider {
+    static var previews: some View {
+        TripView(trip: Trip(title: "Greece", startDate: Date.now, endDate: Date.now))
+            .modelContainer(previewContainer)
+    }
 }
+
+//#Preview {
+//    TripView(trip: Trip(title: "Greece", startDate: Date.now, endDate: Date.now))
+//        .modelContainer(for: Step.self, inMemory: true)
+//}
