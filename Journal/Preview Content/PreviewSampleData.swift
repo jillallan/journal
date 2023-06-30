@@ -16,21 +16,28 @@ let previewContainer: ModelContainer = {
             for: [Step.self, Trip.self],
             ModelConfiguration(inMemory: true)
         )
-        
-        for trip in Trip.previewTrips {
-            container.mainContext.insert(object: trip)
-            
-            for step in Step.previewSteps {
-                container.mainContext.insert(object: step)
-                step.trip = trip
-            }
-        }
-        
-        
-        
         return container
         
     } catch {
         fatalError("error loading sample data: \(error.localizedDescription)")
     }
 }()
+
+@MainActor
+struct PreviewContainer {
+    static var previewContainer: ModelContainer = {
+        do {
+            let container = try ModelContainer(
+                for: [Step.self, Trip.self],
+                ModelConfiguration(inMemory: true)
+            )
+            
+            SampleData.createData(modelContext: container.mainContext)
+
+            return container
+            
+        } catch {
+            fatalError("error loading sample data: \(error.localizedDescription)")
+        }
+    }()
+}

@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7833865A2A3709600000DE47 /* CLLocationCoordinate2D-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783386592A3709600000DE47 /* CLLocationCoordinate2D-Extension.swift */; };
+		7833865E2A37378D0000DE47 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833865D2A37378D0000DE47 /* TestHelper.swift */; };
+		7833865F2A3737AE0000DE47 /* UITestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A06A902A35BB10008E4153 /* UITestHelper.swift */; };
+		783386652A3761330000DE47 /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783386642A3761330000DE47 /* Visit.swift */; };
+		783386672A377B8C0000DE47 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783386662A377B8C0000DE47 /* Journey.swift */; };
+		783386692A377B930000DE47 /* Placemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783386682A377B930000DE47 /* Placemark.swift */; };
+		785310372A339CBE004240F1 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785310362A339CBE004240F1 /* SampleData.swift */; };
+		785310392A33A58B004240F1 /* AddStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785310382A33A58B004240F1 /* AddStepView.swift */; };
 		786C72A52A2FBDC4005BBD7D /* JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72A42A2FBDC4005BBD7D /* JournalApp.swift */; };
-		786C72A92A2FBDC4005BBD7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72A82A2FBDC4005BBD7D /* ContentView.swift */; };
+		786C72A92A2FBDC4005BBD7D /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72A82A2FBDC4005BBD7D /* TripsView.swift */; };
 		786C72AB2A2FBDC5005BBD7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786C72AA2A2FBDC5005BBD7D /* Assets.xcassets */; };
 		786C72AF2A2FBDC5005BBD7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786C72AE2A2FBDC5005BBD7D /* Preview Assets.xcassets */; };
 		786C72BA2A2FBDC5005BBD7D /* JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72B92A2FBDC5005BBD7D /* JournalTests.swift */; };
 		786C72C42A2FBDC5005BBD7D /* JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72C32A2FBDC5005BBD7D /* JournalUITests.swift */; };
 		786C72C62A2FBDC5005BBD7D /* JournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72C52A2FBDC5005BBD7D /* JournalUITestsLaunchTests.swift */; };
-		786C72D32A2FBE59005BBD7D /* PersistanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72D22A2FBE59005BBD7D /* PersistanceController.swift */; };
 		786C72D52A2FBEBA005BBD7D /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72D42A2FBEBA005BBD7D /* Trip.swift */; };
 		786C72D72A2FBF61005BBD7D /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C72D62A2FBF61005BBD7D /* Step.swift */; };
+		789025772A3B191200965D22 /* StepScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789025762A3B191200965D22 /* StepScrollView.swift */; };
+		78B495952A366A6F0081ABBB /* BaseUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B495942A366A6F0081ABBB /* BaseUITest.swift */; };
 		78BD469F2A2FD68300777E9B /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD469E2A2FD68300777E9B /* TripView.swift */; };
 		78BD46A12A30A25000777E9B /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD46A02A30A25000777E9B /* PreviewSampleData.swift */; };
 		78BD46A32A30A57F00777E9B /* Trip-Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD46A22A30A57F00777E9B /* Trip-Preview.swift */; };
 		78BD46A62A31F85600777E9B /* Step-Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD46A52A31F85600777E9B /* Step-Preview.swift */; };
+		78BD46A82A32584200777E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD46A72A32584200777E9B /* ContentView.swift */; };
+		78BD46AA2A325EC000777E9B /* AddTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD46A92A325EC000777E9B /* AddTripView.swift */; };
+		78DE7C312A3B4BFC00CE4AEA /* TripMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DE7C302A3B4BFC00CE4AEA /* TripMap.swift */; };
+		78DE7C3D2A3EE3EF00CE4AEA /* StepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DE7C3C2A3EE3EF00CE4AEA /* StepCard.swift */; };
+		78DE7C412A4AC28700CE4AEA /* Array-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DE7C402A4AC28600CE4AEA /* Array-Extension.swift */; };
+		78E052F22A4E1058008781BF /* TripOverviewCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E052F12A4E1058008781BF /* TripOverviewCard.swift */; };
+		78EFCCCA2A4CBD9200DAA9BB /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EFCCC92A4CBD9200DAA9BB /* LocationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +57,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		783386592A3709600000DE47 /* CLLocationCoordinate2D-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D-Extension.swift"; sourceTree = "<group>"; };
+		7833865D2A37378D0000DE47 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		783386642A3761330000DE47 /* Visit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
+		783386662A377B8C0000DE47 /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		783386682A377B930000DE47 /* Placemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placemark.swift; sourceTree = "<group>"; };
+		785310362A339CBE004240F1 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		785310382A33A58B004240F1 /* AddStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStepView.swift; sourceTree = "<group>"; };
 		786C72A12A2FBDC4005BBD7D /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786C72A42A2FBDC4005BBD7D /* JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalApp.swift; sourceTree = "<group>"; };
-		786C72A82A2FBDC4005BBD7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		786C72A82A2FBDC4005BBD7D /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
 		786C72AA2A2FBDC5005BBD7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786C72AC2A2FBDC5005BBD7D /* Journal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Journal.entitlements; sourceTree = "<group>"; };
 		786C72AE2A2FBDC5005BBD7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -53,13 +76,22 @@
 		786C72BF2A2FBDC5005BBD7D /* JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		786C72C32A2FBDC5005BBD7D /* JournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalUITests.swift; sourceTree = "<group>"; };
 		786C72C52A2FBDC5005BBD7D /* JournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		786C72D22A2FBE59005BBD7D /* PersistanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceController.swift; sourceTree = "<group>"; };
 		786C72D42A2FBEBA005BBD7D /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		786C72D62A2FBF61005BBD7D /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		789025762A3B191200965D22 /* StepScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepScrollView.swift; sourceTree = "<group>"; };
+		78A06A902A35BB10008E4153 /* UITestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestHelper.swift; sourceTree = "<group>"; };
+		78B495942A366A6F0081ABBB /* BaseUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITest.swift; sourceTree = "<group>"; };
 		78BD469E2A2FD68300777E9B /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
 		78BD46A02A30A25000777E9B /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
 		78BD46A22A30A57F00777E9B /* Trip-Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip-Preview.swift"; sourceTree = "<group>"; };
 		78BD46A52A31F85600777E9B /* Step-Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Step-Preview.swift"; sourceTree = "<group>"; };
+		78BD46A72A32584200777E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78BD46A92A325EC000777E9B /* AddTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripView.swift; sourceTree = "<group>"; };
+		78DE7C302A3B4BFC00CE4AEA /* TripMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMap.swift; sourceTree = "<group>"; };
+		78DE7C3C2A3EE3EF00CE4AEA /* StepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCard.swift; sourceTree = "<group>"; };
+		78DE7C402A4AC28600CE4AEA /* Array-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array-Extension.swift"; sourceTree = "<group>"; };
+		78E052F12A4E1058008781BF /* TripOverviewCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripOverviewCard.swift; sourceTree = "<group>"; };
+		78EFCCC92A4CBD9200DAA9BB /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +119,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7833865B2A3709690000DE47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				783386592A3709600000DE47 /* CLLocationCoordinate2D-Extension.swift */,
+				78DE7C402A4AC28600CE4AEA /* Array-Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		783386622A3760B30000DE47 /* Trip */ = {
+			isa = PBXGroup;
+			children = (
+				786C72D42A2FBEBA005BBD7D /* Trip.swift */,
+				786C72A82A2FBDC4005BBD7D /* TripsView.swift */,
+				78BD469E2A2FD68300777E9B /* TripView.swift */,
+				78DE7C302A3B4BFC00CE4AEA /* TripMap.swift */,
+				78BD46A92A325EC000777E9B /* AddTripView.swift */,
+				78DE7C3C2A3EE3EF00CE4AEA /* StepCard.swift */,
+				78E052F12A4E1058008781BF /* TripOverviewCard.swift */,
+				789025762A3B191200965D22 /* StepScrollView.swift */,
+			);
+			path = Trip;
+			sourceTree = "<group>";
+		};
+		783386632A3760C40000DE47 /* Step */ = {
+			isa = PBXGroup;
+			children = (
+				786C72D62A2FBF61005BBD7D /* Step.swift */,
+				785310382A33A58B004240F1 /* AddStepView.swift */,
+			);
+			path = Step;
+			sourceTree = "<group>";
+		};
 		786C72982A2FBDC4005BBD7D = {
 			isa = PBXGroup;
 			children = (
@@ -111,11 +176,14 @@
 			isa = PBXGroup;
 			children = (
 				786C72A42A2FBDC4005BBD7D /* JournalApp.swift */,
-				786C72D22A2FBE59005BBD7D /* PersistanceController.swift */,
-				786C72D42A2FBEBA005BBD7D /* Trip.swift */,
-				786C72D62A2FBF61005BBD7D /* Step.swift */,
-				786C72A82A2FBDC4005BBD7D /* ContentView.swift */,
-				78BD469E2A2FD68300777E9B /* TripView.swift */,
+				78BD46A72A32584200777E9B /* ContentView.swift */,
+				7833865B2A3709690000DE47 /* Extensions */,
+				78EFCCCB2A4CC0C100DAA9BB /* Services */,
+				78EFCCCD2A4CC10B00DAA9BB /* Visits */,
+				78EFCCCE2A4CC11400DAA9BB /* Journey */,
+				78EFCCCC2A4CC0F600DAA9BB /* Placemark */,
+				783386622A3760B30000DE47 /* Trip */,
+				783386632A3760C40000DE47 /* Step */,
 				786C72AA2A2FBDC5005BBD7D /* Assets.xcassets */,
 				786C72AC2A2FBDC5005BBD7D /* Journal.entitlements */,
 				786C72B02A2FBDC5005BBD7D /* Info.plist */,
@@ -128,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				786C72AE2A2FBDC5005BBD7D /* Preview Assets.xcassets */,
+				785310362A339CBE004240F1 /* SampleData.swift */,
 				78BD46A02A30A25000777E9B /* PreviewSampleData.swift */,
 				78BD46A22A30A57F00777E9B /* Trip-Preview.swift */,
 				78BD46A52A31F85600777E9B /* Step-Preview.swift */,
@@ -139,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				786C72B92A2FBDC5005BBD7D /* JournalTests.swift */,
+				7833865D2A37378D0000DE47 /* TestHelper.swift */,
 			);
 			path = JournalTests;
 			sourceTree = "<group>";
@@ -146,10 +216,44 @@
 		786C72C22A2FBDC5005BBD7D /* JournalUITests */ = {
 			isa = PBXGroup;
 			children = (
+				78A06A902A35BB10008E4153 /* UITestHelper.swift */,
+				78B495942A366A6F0081ABBB /* BaseUITest.swift */,
 				786C72C32A2FBDC5005BBD7D /* JournalUITests.swift */,
 				786C72C52A2FBDC5005BBD7D /* JournalUITestsLaunchTests.swift */,
 			);
 			path = JournalUITests;
+			sourceTree = "<group>";
+		};
+		78EFCCCB2A4CC0C100DAA9BB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				78EFCCC92A4CBD9200DAA9BB /* LocationHandler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		78EFCCCC2A4CC0F600DAA9BB /* Placemark */ = {
+			isa = PBXGroup;
+			children = (
+				783386682A377B930000DE47 /* Placemark.swift */,
+			);
+			path = Placemark;
+			sourceTree = "<group>";
+		};
+		78EFCCCD2A4CC10B00DAA9BB /* Visits */ = {
+			isa = PBXGroup;
+			children = (
+				783386642A3761330000DE47 /* Visit.swift */,
+			);
+			path = Visits;
+			sourceTree = "<group>";
+		};
+		78EFCCCE2A4CC11400DAA9BB /* Journey */ = {
+			isa = PBXGroup;
+			children = (
+				783386662A377B8C0000DE47 /* Journey.swift */,
+			);
+			path = Journey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,13 +387,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				786C72D52A2FBEBA005BBD7D /* Trip.swift in Sources */,
+				7833865A2A3709600000DE47 /* CLLocationCoordinate2D-Extension.swift in Sources */,
 				786C72A52A2FBDC4005BBD7D /* JournalApp.swift in Sources */,
-				786C72A92A2FBDC4005BBD7D /* ContentView.swift in Sources */,
+				786C72A92A2FBDC4005BBD7D /* TripsView.swift in Sources */,
+				783386692A377B930000DE47 /* Placemark.swift in Sources */,
+				78DE7C3D2A3EE3EF00CE4AEA /* StepCard.swift in Sources */,
 				78BD46A62A31F85600777E9B /* Step-Preview.swift in Sources */,
+				783386672A377B8C0000DE47 /* Journey.swift in Sources */,
+				783386652A3761330000DE47 /* Visit.swift in Sources */,
+				78E052F22A4E1058008781BF /* TripOverviewCard.swift in Sources */,
+				78DE7C412A4AC28700CE4AEA /* Array-Extension.swift in Sources */,
 				78BD46A12A30A25000777E9B /* PreviewSampleData.swift in Sources */,
-				786C72D32A2FBE59005BBD7D /* PersistanceController.swift in Sources */,
+				78DE7C312A3B4BFC00CE4AEA /* TripMap.swift in Sources */,
+				78BD46A82A32584200777E9B /* ContentView.swift in Sources */,
+				785310372A339CBE004240F1 /* SampleData.swift in Sources */,
+				78EFCCCA2A4CBD9200DAA9BB /* LocationHandler.swift in Sources */,
+				78BD46AA2A325EC000777E9B /* AddTripView.swift in Sources */,
 				78BD46A32A30A57F00777E9B /* Trip-Preview.swift in Sources */,
+				785310392A33A58B004240F1 /* AddStepView.swift in Sources */,
 				786C72D72A2FBF61005BBD7D /* Step.swift in Sources */,
+				789025772A3B191200965D22 /* StepScrollView.swift in Sources */,
 				78BD469F2A2FD68300777E9B /* TripView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				786C72BA2A2FBDC5005BBD7D /* JournalTests.swift in Sources */,
+				7833865E2A37378D0000DE47 /* TestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,8 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78B495952A366A6F0081ABBB /* BaseUITest.swift in Sources */,
 				786C72C62A2FBDC5005BBD7D /* JournalUITestsLaunchTests.swift in Sources */,
 				786C72C42A2FBDC5005BBD7D /* JournalUITests.swift in Sources */,
+				7833865F2A3737AE0000DE47 /* UITestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +575,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Journal/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to mark out your trips";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -494,6 +615,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Journal/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your location is used to mark out your trips";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -573,6 +695,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UJT6W9JA72;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To track trips";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To track trips";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -595,6 +720,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UJT6W9JA72;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "To track trips";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To track trips";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;

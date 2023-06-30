@@ -5,7 +5,10 @@
 //  Created by Jill Allan on 06/06/2023.
 //
 
+import CoreLocation
 import XCTest
+@testable import Journal
+
 
 final class JournalTests: XCTestCase {
 
@@ -17,12 +20,35 @@ final class JournalTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testCLLocationCoordinate2DEncode_outputsDataObject() throws {
+        // if
+        let cllocationCoordinate2D = CLLocationCoordinate2D(latitude: Double.random(in: -180...180), longitude: Double.random(in: -180...180))
+        let encoder = JSONEncoder()
+        
+        // when
+        
+        let data = try encoder.encode(cllocationCoordinate2D)
+        print(type(of: data))
+        print(data)
+        
+        // then
+        XCTAssertTrue(type(of: data) == Data.self)
+
+    }
+    
+    func testCLLocationCoordinate2DInitFromDecoder_outputsCLLocationCoordinate2D() throws {
+        // if
+        let cllocationCoordinate2D = CLLocationCoordinate2D(latitude: Double.random(in: -180...180), longitude: Double.random(in: -180...180))
+        let encoder = JSONEncoder()
+        let data = try encoder.encode(cllocationCoordinate2D)
+        
+        // when
+        
+        let decoder = JSONDecoder()
+        let decodedLocationCoordinates = try decoder.decode(CLLocationCoordinate2D.self, from: data)
+        
+        // then
+        XCTAssertEqual(decodedLocationCoordinates, cllocationCoordinate2D)
     }
 
     func testPerformanceExample() throws {

@@ -6,31 +6,70 @@
 //
 
 import XCTest
+//@testable import Journal
 
-final class JournalUITests: XCTestCase {
+final class JournalUITests: BaseUITest {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        try super.setUpWithError()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        try super.tearDownWithError()
+    }
+    
+    func testExample2() throws {
+        app.collectionViews.staticTexts["Bedminster to Moscow"].tap()
+        let map = app.maps.element.exists
+        print(String(describing: map))
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+    func testAddTrip_AddsATripInTripsView() throws {
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // if
+        let tripTitle = UITestHelper.randomString(length: 5)
+        
+        // when
+        let addItemButton = app.navigationBars["Trips"].buttons["Add Item"]
+        addItemButton.tap()
+        app.collectionViews/*@START_MENU_TOKEN@*/.textFields["Trip Title"]/*[[".cells.textFields[\"Trip Title\"]",".textFields[\"Trip Title\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.typeText(tripTitle)
+        app.buttons["Add Trip"].tap()
+        
+        let tripTitleExists = app.collectionViews.staticTexts[tripTitle].exists
+
+        // then
+        XCTAssertTrue(tripTitleExists, "Should find \(tripTitle) in list of trips")
+    }
+    
+    func testAddStep_AddsAStepInStepsView() throws {
+        
+        // if
+//        let latitude = String(format: "%.6f", Double.random(in: 0...180))
+        
+        let formatter = NumberFormatter()
+        formatter.maximumFractionDigits = 6
+        
+        let latitude = formatter.string(from: Double.random(in: 0...180) as NSNumber) ?? "0.0"
+        let longitude = formatter.string(from: Double.random(in: 0...180) as NSNumber) ?? "0.0"
+        
+        // when
+        app.collectionViews.staticTexts["Russia"].tap()
+        app.navigationBars["Russia"].buttons["Add Step"].tap()
+        app.collectionViews.textFields["Latitude"].tap()
+        app.typeText(latitude)
+        app.collectionViews.textFields["Longitude"].tap()
+        app.typeText(longitude)
+        app.collectionViews/*@START_MENU_TOKEN@*/.buttons["Add Step"]/*[[".cells.buttons[\"Add Step\"]",".buttons[\"Add Step\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
+        // then
+        let latitudeExists = app.collectionViews.staticTexts[latitude].exists
+        let longitudeExists = app.collectionViews.staticTexts[longitude].exists
+
+        XCTAssertTrue(latitudeExists && longitudeExists, "Should find \(latitude) and \(longitude) in list of trips")
     }
 
-    func testLaunchPerformance() throws {
+    override func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
             measure(metrics: [XCTApplicationLaunchMetric()]) {
